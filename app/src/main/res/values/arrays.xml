@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipos_residuos">
+        <item>Orgánico</item>
+        <item>Plástico</item>
+        <item>Papel</item>
+        <item>Vidrio</item>
+        <item>Metal</item>
+    </string-array>
+</resources>

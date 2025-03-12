@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquoise"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione el tipo de residuo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- ORGÁNICO -->
+    <ImageView
+        android:id="@+id/img_organico"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/organico"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_organico"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Orgánico"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toEndOf="@id/img_organico"
+        app:layout_constraintTop_toTopOf="@id/img_organico"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+
+    <!-- PLÁSTICO -->
+    <ImageView
+        android:id="@+id/img_plastico"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/plastico"
+        app:layout_constraintTop_toBottomOf="@id/img_organico"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_plastico"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Plástico"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toEndOf="@id/img_plastico"
+        app:layout_constraintTop_toTopOf="@id/img_plastico"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+
+    <!-- PAPEL -->
+    <ImageView
+        android:id="@+id/img_papel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/papel"
+        app:layout_constraintTop_toBottomOf="@id/img_plastico"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_papel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Papel"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toEndOf="@id/img_papel"
+        app:layout_constraintTop_toTopOf="@id/img_papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+
+    <!-- VIDRIO -->
+    <ImageView
+        android:id="@+id/img_vidrio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/vidrio"
+        app:layout_constraintTop_toBottomOf="@id/img_papel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_vidrio"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Vidrio"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toEndOf="@id/img_vidrio"
+        app:layout_constraintTop_toTopOf="@id/img_vidrio"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+
+    <!-- METAL -->
+    <ImageView
+        android:id="@+id/img_metal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/metal"
+        app:layout_constraintTop_toBottomOf="@id/img_vidrio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_metal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Metal"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toEndOf="@id/img_metal"
+        app:layout_constraintTop_toTopOf="@id/img_metal"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="32dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

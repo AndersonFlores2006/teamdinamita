@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string-array name="ordenar_opciones">
+        <item>Por Tipo</item>
+        <item>Por Cantidad</item>
+    </string-array>
+</resources>

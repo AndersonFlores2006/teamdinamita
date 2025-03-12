@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquoise"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Bienvenido"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Registrar Residuos -->
+
+    <!-- Botón Ver Lista de Residuos -->
+
+    <!-- Botón Generar Reporte PDF -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_registrar_residuos"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="180dp"
+        android:text="Registrar Residuos"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ver_lista"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Ver Lista de Residuos"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_registrar_residuos"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_generar_pdf"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Generar Reporte PDF"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/turquoise"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ver_lista"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="149dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrar_residuos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:srcCompat="@drawable/reciclaje" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
